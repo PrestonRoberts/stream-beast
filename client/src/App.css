@@ -1,0 +1,62 @@
+@keyframes temporaryVisability {
+    0% { opacity: 0; }
+    15%,
+    85% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Alert Box */
+@keyframes alert {
+    0% { top: 200px; opacity: 100; }
+    15%,
+    85% { top: 50px;}
+    100% { top: 200px; opacity: 0;}
+
+}
+
+.alertbox {
+    margin-left: 10px;
+    background: #248bf5;
+    padding: 0.5rem 1.5rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: #fff;
+    font-family: arial;
+    position: absolute;
+    width: fit-content;
+    border-radius: 1rem;
+    animation: alert 4s forwards ease-in-out;
+}
+  
+/* .alertbox:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #248bf5;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #248bf5;
+    border-bottom: 10px solid transparent;
+    left: 19px;
+    bottom: -19px;
+} */
+
+/* Streambeast */
+@keyframes streambeastMsg {
+    0% { transform: translateX(-100%); opacity: 100; }
+    15%,
+    85% { transform: translateX(0); opacity: 100;}
+    100% { transform: translateX(-100%); opacity: 0;}
+}
+
+.streambeast {
+    margin-left: 10px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-family: arial;
+    position: absolute;
+    width: fit-content;
+    border-radius: 1rem;
+    animation: streambeastMsg 8s forwards ease-in-out;
+}
